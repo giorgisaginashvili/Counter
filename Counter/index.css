@@ -1,0 +1,108 @@
+#counterlabel{
+    text-align: center;
+    display: block;
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10%;
+    
+    color: rgb(42, 51, 51);
+    
+}
+.buttons button {
+    padding: 15px 40px;
+    margin: 30px;
+    border-width: medium;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-size-adjust: 15px;
+    border-color: rgb(47, 79, 79);
+}
+.buttons button:hover {
+    background-color: #999; 
+    color: #fff; 
+}
+
+.buttons button:active {
+    background-color: #666;
+    color: #fff; 
+}
+#increasebtn {
+    background-color: rgba(41, 99, 41, 0);
+    color: rgb(47, 79, 79);
+    position: absolute;
+    left: 55%;
+}
+
+
+#decreasebtn {
+    background-color: rgba(143, 30, 30, 0);
+    color: rgb(47, 79, 79);
+    position: absolute;
+    left: 35%;
+    
+}
+
+
+#resetbtn {
+    background-color: rgba(26, 26, 107, 0);
+    color:rgb(47, 79, 79);
+    position: absolute;
+    left: 46%;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+.headline {
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.buttons button {
+    padding: 15px 40px;
+    margin: 30px;
+    border-width: medium;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: center;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-size-adjust: 15px;
+    border-color: rgb(47, 79, 79);
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.buttons button:active {
+    background-color: #666; 
+    color: #fff; 
+}
+
+
+.buttons button:active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.buttons button:not(:active):hover::after {
+    background-color: rgba(0, 0, 0, 0); 
+    color: rgb(47, 79, 79); }
